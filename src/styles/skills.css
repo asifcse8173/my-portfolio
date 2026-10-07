@@ -1,0 +1,129 @@
+/* Skills section + tech marquee */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.skill-card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 18px;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(167, 139, 250, 0.4);
+}
+
+.skill-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(139, 92, 246, 0.12);
+  color: #a78bfa;
+  display: grid;
+  place-items: center;
+}
+
+.skill-card h3 {
+  margin: 20px 0 7px;
+}
+
+.skill-card p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.skill-card {
+  --c: #a78bfa;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--c);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s;
+}
+
+.skill-card:hover::before {
+  transform: scaleX(1);
+}
+
+.skill-icon {
+  background: color-mix(in srgb, var(--c) 16%, transparent);
+  color: var(--c);
+  transition: transform 0.35s;
+}
+
+.skill-card:hover {
+  border-color: color-mix(in srgb, var(--c) 55%, transparent);
+  box-shadow: 0 18px 50px color-mix(in srgb, var(--c) 20%, transparent);
+}
+
+.skill-card:hover .skill-icon {
+  transform: rotate(-10deg) scale(1.12);
+}
+
+.marquee {
+  margin-top: 26px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.marquee-track {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 99px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.marquee span::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 10px var(--c);
+}

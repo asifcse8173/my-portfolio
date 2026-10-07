@@ -1,0 +1,99 @@
+/* Keyframe animations used across the site */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: rotate(2deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-1deg) translateY(-12px);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes shift {
+  to {
+    background-position: 300% 0;
+  }
+}
+
+@keyframes gradmove {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(70px, -50px) scale(1.25);
+  }
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes ping {
+  0% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(52, 211, 153, 0);
+  }
+}
+
+@keyframes ping2 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--r), 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(var(--r), 0);
+  }
+}
+
+@keyframes tilt {
+  0%,
+  100% {
+    transform: rotate(-7deg) scale(1);
+  }
+  50% {
+    transform: rotate(-3deg) scale(1.04);
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}

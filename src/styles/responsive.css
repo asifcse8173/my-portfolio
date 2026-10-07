@@ -1,0 +1,151 @@
+/* =====================================================================
+   Responsive rules — every breakpoint lives here.
+   Large screen  : 1536px and up
+   Laptop        : up to 1024px
+   Tablet        : up to 900px   (menu collapses, layout becomes 1 column)
+   Large phone   : up to 700px
+   Phone         : up to 620px
+   Small phone   : up to 380px
+   ===================================================================== */
+
+/* ---------- Large screens ---------- */
+@media (min-width: 1536px) {
+  .section { width: min(1280px, 88vw); }
+  footer { width: min(1280px, 88vw); }
+  h1 { font-size: 80px; }
+}
+
+/* ---------- Laptop / small desktop ---------- */
+@media (max-width: 1024px) {
+  .hero { gap: 30px; }
+  .about-grid { gap: 40px; }
+  .contact-box { padding: 44px; }
+  .orbit-a { width: 420px; height: 420px; }
+  .orbit-b { width: 500px; height: 220px; }
+  .chip-a { left: -12px; }
+  .chip-b { right: -12px; }
+  .project-shape { inset: 50px 56px; }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+  /* navigation turns into a dropdown menu */
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 5vw;
+    right: 5vw;
+    padding: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  }
+  .nav-links button { text-align: left; padding: 13px 12px; font-size: 15px; border-radius: 10px; }
+  .nav-links button.active { box-shadow: none; background: rgba(167, 139, 250, 0.14); }
+  .nav-github { justify-content: center; margin-top: 6px; padding: 12px; font-size: 14px; }
+  .menu-btn { display: grid; place-items: center; }
+
+  /* hero: text on top, photo below */
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 120px; padding-bottom: 100px; text-align: left; }
+  .hero-visual { min-height: 0; padding: 20px 0 10px; }
+  .photo-card { width: min(340px, 72%); }
+  .orbit-a { width: 380px; height: 380px; }
+  .orbit-b { width: 460px; height: 200px; }
+  .scroll-hint { display: none; }
+
+  /* grids */
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-box { flex-direction: column; align-items: flex-start; }
+  .contact-actions { justify-content: flex-start; }
+}
+
+/* ---------- Large phone ---------- */
+@media (max-width: 700px) {
+  .resume-card { flex-direction: column; align-items: flex-start; }
+  .resume-actions { width: 100%; }
+  .resume-actions .btn-sm { flex: 1; justify-content: center; }
+  .contact-box { padding: 36px; }
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 620px) {
+  .section { padding: 70px 0; }
+  .nav { height: 68px; }
+  .nav-cta { display: none; }
+  .nav-resume { padding: 0 10px; font-size: 12px; }
+
+  .hero { padding-top: 104px; padding-bottom: 70px; }
+  .eyebrow { font-size: 11px; letter-spacing: 0.1em; align-items: flex-start; line-height: 1.5; }
+  .eyebrow .pulse { margin-top: 5px; flex: none; }
+  h1 { font-size: clamp(36px, 10.5vw, 46px); }
+  .hero-text { font-size: 15px; line-height: 1.75; }
+  .hero-actions { gap: 10px; }
+  .hero-actions > * { flex: 1 1 100%; justify-content: center; }
+  .mini-stats { gap: 22px; margin-top: 40px; flex-wrap: wrap; }
+  .photo-card { width: min(300px, 78%); }
+  .orbit { display: none; }
+  .chip { font-size: 11px; padding: 8px 12px; }
+  .chip-a { left: -6px; }
+  .chip-b { right: -6px; }
+
+  .section-head { margin-bottom: 34px; }
+  .section-head h2 { font-size: clamp(30px, 9vw, 40px); }
+
+  .about-card { padding: 26px; }
+  .skills-grid, .project-grid { grid-template-columns: 1fr; }
+  .project-visual { height: 190px; }
+  .project-shape { inset: 40px 56px; }
+  .project-body { padding: 22px; }
+  .project-body h3 { font-size: 21px; }
+  .card-actions { flex-wrap: wrap; }
+  .timeline { margin-left: 4px; }
+  .timeline-item { padding: 0 0 40px 26px; }
+  .timeline-item h3 { font-size: 18px; }
+
+  .contact { padding-bottom: 60px; }
+  .contact-box { padding: 28px 24px; border-radius: 24px; gap: 28px; }
+  .contact-box h2 { font-size: clamp(32px, 10vw, 44px); }
+  .contact-actions { width: 100%; }
+  .contact-actions > * { flex: 1 1 100%; justify-content: center; }
+  .resume-card { padding: 20px; }
+
+  footer { flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+}
+
+/* ---------- Small phone ---------- */
+@media (max-width: 380px) {
+  .nav { padding: 0 16px; }
+  .brand { font-size: 18px; }
+  .brand-mark { width: 30px; height: 30px; }
+  .mini-stats { gap: 16px; }
+  .mini-stats b { font-size: 22px; }
+  .chip-b { display: none; }
+  .project-shape { inset: 36px 40px; }
+  .project-shape span { font-size: 24px; }
+  .btn-sm { padding: 9px 12px; }
+}
+
+/* ---------- Short landscape screens (phones turned sideways) ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: auto; padding-top: 100px; }
+}
+
+/* ---------- Touch devices: no mouse, so no cursor glow ---------- */
+@media (hover: none) {
+  .cursor-glow { display: none; }
+}
+
+/* ---------- Respect "reduce motion" system setting ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}

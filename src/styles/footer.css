@@ -1,0 +1,19 @@
+/* Footer */
+
+footer {
+  border-top: 1px solid var(--line);
+  width: 90vw;
+  margin: auto;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+footer button {
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}

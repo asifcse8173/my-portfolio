@@ -1,0 +1,75 @@
+/* Experience timeline */
+
+.timeline {
+  max-width: 850px;
+  border-left: 1px solid var(--line);
+  margin-left: 10px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 55px 38px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #a78bfa;
+  box-shadow: 0 0 0 6px var(--bg);
+}
+
+.timeline-item span {
+  font-size: 10px;
+  color: #8b5cf6;
+  letter-spacing: 0.12em;
+}
+
+.timeline-item h3 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.timeline-item p {
+  font-size: 13px;
+  max-width: 650px;
+}
+
+.timeline {
+  border-left: 2px solid transparent;
+  border-image: linear-gradient(#a78bfa, #22d3ee, #f472b6) 1;
+}
+
+.timeline-dot {
+  animation: ping2 2.4s ease-out infinite;
+}
+
+.timeline-item:nth-child(1) .timeline-dot {
+  background: #a78bfa;
+  --r: 167, 139, 250;
+}
+
+.timeline-item:nth-child(2) .timeline-dot {
+  background: #22d3ee;
+  --r: 34, 211, 238;
+}
+
+.timeline-item:nth-child(3) .timeline-dot {
+  background: #f472b6;
+  --r: 244, 114, 182;
+}
+
+.timeline-item span {
+  color: #22d3ee;
+}
+
+.timeline-item h3 {
+  transition: color 0.3s;
+}
+
+.timeline-item:hover h3 {
+  color: #f472b6;
+}

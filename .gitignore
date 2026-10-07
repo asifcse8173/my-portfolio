@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output (Vercel/Netlify rebuild this themselves)
+dist/
+dist-ssr/
+
+# Lock file noise is optional; remove this line if you WANT to commit it
+# package-lock.json
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Vercel / Netlify local folders
+.vercel
+.netlify
+
+# Temporary files
+*.tmp
+.cache/
