@@ -9,7 +9,7 @@ export const PROJECTS = [
     tags: ["React", "Node.js", "Supabase", "AI"],
     accent: "purple",
     github: "https://github.com/asifcse8173/hostelcare",
-    live: "https://hostelcare.vercel.app/",
+    live: "https://hostelcare-egfu-eyn3j5f58-asifcse8173s-projects.vercel.app/",
   },
   {
     title: "Smart Hospital Queue",
@@ -27,7 +27,7 @@ export const PROJECTS = [
     tags: ["HTML/CSS/JS", "Node.js", "MySQL"],
     accent: "orange",
     github: "https://github.com/asifcse8173/food-ordering-website",
-    live: "https://food-ordering-website-2u68.onrender.com/",
+    live: "https://food-ordering-website-5jf5.vercel.app/",
   },
   {
     title: "Max Communication",
@@ -36,6 +36,6 @@ export const PROJECTS = [
     tags: ["React", "Responsive", "Business"],
     accent: "green",
     github: "#",
-    live: "https://max-communication.vercel.app/",
+    live: "https://maxmobileshop-relnbeyr9-asifcse8173s-projects.vercel.app/",
   },
 ];
