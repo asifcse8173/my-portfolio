@@ -12,7 +12,7 @@ export default function About() {
       <div className="about-grid">
         <Reveal className="about-card">
           <img className="about-photo" src="/asif.jpg" alt="Asif" loading="lazy" width="72" height="72" />
-          <h3>Hi, I'm Asif.</h3>
+          <h3>Hi, I'm Mohd Asif.</h3>
           <p>
             I enjoy taking an idea from a rough problem statement to a responsive interface,
             functional backend and deployable product. My recent work combines React,

@@ -2,10 +2,10 @@
 //  EDIT THIS FILE to personalise the portfolio (email, links, resume).
 // =====================================================================
 
-export const NAME = "Asif";
+export const NAME = "Mohd Asif";
 
-export const EMAIL = "your-email@example.com"; // <- put your real email here
-export const LINKEDIN = "";                    // <- e.g. "https://www.linkedin.com/in/your-handle"
+export const EMAIL = "asifsidd4564@gmail.com";
+export const LINKEDIN = "https://www.linkedin.com/in/mohd-asif-8959b4301";
 export const GITHUB = "https://github.com/asifcse8173";
 
 // Put your resume PDF inside the /public folder with this exact name.

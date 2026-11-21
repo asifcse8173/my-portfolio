@@ -25,8 +25,8 @@ export default function Hero({ hasResume }) {
         <div className="role-line"><span>›</span> <Typewriter words={ROLES} /></div>
 
         <p className="hero-text">
-          I'm <strong>Asif</strong>, a final-year B.Tech CSE student and frontend / full-stack developer.
-          I design, build and deploy React + Node.js applications, with <strong>3 live projects</strong> and
+          I'm <strong>Mohd Asif</strong>, a frontend-focused B.Tech CSE student and React.js developer.
+          I design, build and deploy responsive web applications, with <strong>3 live projects</strong> and
           hands-on internship experience.
         </p>
 

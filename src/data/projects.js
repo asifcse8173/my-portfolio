@@ -2,20 +2,20 @@
 // accent: "purple" | "blue" | "orange" | "green"  (card colour theme)
 export const PROJECTS = [
   {
-    title: "HostelCare AI",
+    title: "Hostel Management System",
     featured: true,
-    category: "Full-Stack + AI",
-    description: "Smart hostel complaint and operations platform with Student and Warden/Admin portals, complaint tracking, priority handling and AI-assisted insights.",
-    tags: ["React", "Node.js", "Supabase", "AI"],
+    category: "Full-Stack",
+    description: "Complaint system with Student and Warden/Admin portals, real-time status tracking and complaint resolution for 100+ potential users.",
+    tags: ["React", "Node.js", "Express.js", "MySQL"],
     accent: "purple",
     github: "https://github.com/asifcse8173/hostelcare",
     live: "https://hostelcare-egfu-eyn3j5f58-asifcse8173s-projects.vercel.app/",
   },
   {
-    title: "Smart Hospital Queue",
-    category: "Product Concept",
-    description: "Digital OPD queue management concept for appointments, tokens, live queue tracking, doctor delays and emergency prioritisation.",
-    tags: ["React", "UI/UX", "Queue System"],
+    title: "Mobile Shop Website",
+    category: "Frontend",
+    description: "Responsive mobile shop website for browsing phone listings and details, backed by Supabase data storage and connected through its API.",
+    tags: ["React", "HTML/CSS/JS", "Supabase"],
     accent: "blue",
     github: "#",
     live: "#",
