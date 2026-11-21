@@ -11,6 +11,7 @@ import { NAV_SECTIONS } from "./data/sections";
 import useResume from "./hooks/useResume";
 import useScrollSpy from "./hooks/useScrollSpy";
 
+
 // App = page layout only. Each section lives in src/components, its content in src/data.
 export default function App() {
   const [dark, setDark] = useState(true);
